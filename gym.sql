@@ -141,3 +141,22 @@ GRANT SELECT, INSERT, TRIGGER ON TABLE * TO 'admin'@'localhost';
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Data for table `exercise`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `gym`;
+INSERT INTO `exercise` (`id`, `name`, `description`, `instruction`, `url`) VALUES (1, 'Squats', 'Make those buns like powww', NULL, NULL);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `user`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `gym`;
+INSERT INTO `user` (`id`, `first_name`, `last_name`) VALUES (1, 'Chuck', 'Tingle');
+
+COMMIT;
